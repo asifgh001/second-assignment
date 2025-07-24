@@ -1,0 +1,65 @@
+
+.noto-serif-title {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 65px;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.inter-text {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 22px;
+  font-style: normal;
+}
+
+/* Shared Styles */
+.display-flex{
+    display: flex;
+}
+
+/* Navbar */
+header{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.nav-img{
+    width: 135px;
+    height: 82px;
+}
+.nav-bar ul{
+    list-style: none;
+    gap: 30px;
+}
+.nav-bar{
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+/* Banner */
+.banner{
+
+}
+.banner-content{
+    margin-top: 158px;
+}
+.banner-title{
+    margin: 0 0 17px 0;
+}
+.banner-span{
+    color: #E95A08;
+}
+.banner-text{
+    margin: 0;
+    color: rgba(0, 0, 0, 0.5);
+}
+.banner-img img{
+    width: 570px;
+    height: 355px;
+    margin-top: 102px;
+}
