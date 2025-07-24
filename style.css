@@ -17,15 +17,29 @@
 }
 
 /* Shared Styles */
-.display-flex{
-    display: flex;
-}
-
-/* Navbar */
-header{
+.m-width{
     max-width: 1140px;
     margin: 0 auto;
 }
+.display-flex{
+    display: flex;
+}
+.p-color{
+    color: #E95A08;
+}
+.s-color{
+    color: rgba(0, 0, 0, 0.5);
+}
+.txt-center{
+    text-align: center;
+}
+
+
+
+
+
+
+/* Navbar */
 .nav-img{
     width: 135px;
     height: 82px;
@@ -51,15 +65,46 @@ header{
 .banner-title{
     margin: 0 0 17px 0;
 }
-.banner-span{
-    color: #E95A08;
-}
 .banner-text{
     margin: 0;
-    color: rgba(0, 0, 0, 0.5);
 }
 .banner-img img{
     width: 570px;
     height: 355px;
     margin-top: 102px;
+}
+
+/* Plants */
+.plants{
+    margin-top: 120px;
+}
+.card-cont{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
+    row-gap: 30px;
+}
+.plant-title{
+    margin: 0 0 17px 0;
+}
+.plant-text{
+    margin: 0 auto 48px auto;
+    max-width: 888px;
+}
+.card-t{
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+.price{
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.card>button{
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #E95A08;
+    border: none;
+    padding: 19px 80px;
+    color: #ffffff;
 }
