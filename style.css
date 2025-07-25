@@ -54,6 +54,19 @@
     margin-top: 20px;
     margin-bottom: 100px;
 }
+.nav-bar ul li a{
+    text-decoration: none;
+}
+.c1{
+    color: #252432;
+    font-weight: bold;
+}
+.c3{
+    color: #252432;
+}
+.c2{
+    color: #8987A1;
+}
 
 /* Banner */
 .banner{
@@ -114,9 +127,19 @@
 .flower-and-plants-lover{
     justify-content: space-between;
     align-items: center;
-    margin-top: 120px;
+    margin-top: 200px;
     margin-bottom: 120px;
     gap: 70px;
+}
+.fpl-img-cont{
+    position: relative;
+    flex: 1;
+}
+.flp-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 .flp-title{
     margin: 20px 0;
@@ -125,6 +148,23 @@
 .flp-text{
     margin: 0;
 }
+@keyframes rott{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.badge-img{
+    height: 286px;
+    width: 286px;
+    position: absolute;
+    top: -120px;
+    right: -110px;
+    animation: rott 7s infinite linear;
+}
+
 
 /* Latest Deals */
 .ldeals-title{
@@ -196,4 +236,213 @@
     font-size: 28px;
     font-weight: 600;
     color: #ffffff;
+}
+
+/* Subscribe */
+
+.subscribe{
+    background-image: url(images/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 533px;
+    margin-top: 120px;
+}
+.subscribe-title{
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 150px;
+}
+.sub{
+    max-width: 830px;
+    margin: 0 auto;
+    display: flex;
+    gap: 0px;
+}
+.sub-input{
+    font-size: 16px;
+    height: 50px;
+    border: none;
+    padding: 0 10px;
+    width: 644px;
+}
+.sub-btn{
+    font-size: 16px;
+    font-weight: 600;
+    height: 50px;
+    border: none;
+    width: 186px;
+    color: #ffffff;
+    background-color: #E95A08;
+}
+
+/* Footer */
+footer{
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.5);
+    max-width: 1120px;
+    margin: 50px auto;
+}
+.f-logo-text{
+    font-size: 22px;
+    max-width: 360px;
+}
+.f-nav>ul, .f-tag>ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 0px;
+}
+.f-social{
+    display: flex;
+    gap: 30px;
+    align-self: flex-start;
+}
+footer ul{
+    list-style: none;
+}
+footer li a{
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;    
+}
+
+/* Responsive */
+
+@media screen and (max-width: 430px){
+
+    .noto-serif-title{
+        font-size: 30px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .card>button{
+        font-size: 14px;
+        padding: 10px 38px;
+    }
+
+
+    .c1,.c2{
+        display: none;
+    }
+    .nav-bar{
+        max-width: 370px;
+        margin: 30px auto;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-img>img{
+        width: 100%;
+        height: 245px;
+    }
+
+
+    .card-cont{
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 13px;
+    }
+    .card, .card-img, .card>button{
+        max-width: 171px;
+    }
+
+
+
+    .badge-img{
+        display: none;
+    }
+    .flower-and-plants-lover{
+        flex-direction: column;
+        width: 371px;
+    }
+    .fpl-img{
+        width: 100%;
+    }
+
+
+
+    .ldeals-img-cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 371px;
+        margin-left: 15px;
+    }
+    .ldeals-img2{
+        grid-column: span 0;
+        grid-row: span 0;
+    }
+    .ldeals-img{
+        position: relative;
+    }
+    .one{
+        height: 202px;
+    }
+    .two{
+        height: 200px;
+        width: 367px;
+    }
+    .three{
+        height: 198px;
+    }
+    .ldeals-img2>img{
+        height: 200px;
+    }
+    .one>img, .two>img, .three>img{
+        width: 100%;
+    }
+    .img1, .img2, .img3{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: #ffffff;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 15px;    
+    }
+    .img1-t, .img2-t, .img3-t{
+        font-size: 20px;
+        font-weight: bold;
+        width: 270px;
+        margin: 70px auto 10px auto;
+    }
+    .img1-btn, .img2>.img2-btn>a, .img3-btn{
+        font-size: 16px;
+        font-weight: 600;
+        color: #ffffff;
+    }
+
+
+    .subscribe{
+        height: 276px;
+        background-size: cover;
+    }
+    .subscribe-title{
+        font-size: 20px;
+        padding-top: 80px;
+    }
+    .sub{
+        max-width: 340px;
+        margin: 0 auto;
+    }
+    .sub-input{
+        max-width: 250px;
+    }
+    .sub-btn{
+        max-width: 90px;
+    }
+    footer{
+        flex-direction: column;
+        max-width: 371px;
+    }
+    footer ul{
+        padding: 10px;
+    }
+    .f-social{
+        padding: 10px;
+    }
+    
 }
